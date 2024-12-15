@@ -145,8 +145,8 @@ for (var i = 0; i < mapPart2.Length; i++)
         }
     }
 }
-Console.WriteLine(part1Answer);
-Console.WriteLine(part2Answer);
+Console.WriteLine($"First part: {part1Answer}");
+Console.WriteLine($"Second part: {part2Answer}");
 return;
 
 
