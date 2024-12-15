@@ -1,4 +1,4 @@
-﻿var mapInput = File.ReadAllLines(Path.Join(Directory.GetCurrentDirectory(), "input1.txt")); // Read input data
+﻿var mapInput = await File.ReadAllLinesAsync(Path.Join(Directory.GetCurrentDirectory(), "input1.txt")); // Read input data
 using var commandsReader = new StreamReader(Path.Join(Directory.GetCurrentDirectory(), "input2.txt")); // Input is split in two files, one is just a map other contains all commands
 
 var directions = new[] { (-1, 0), (0, 1), (1, 0), (0, -1) }; // Directions array for use in methods to check if move is possible and act accordingly
